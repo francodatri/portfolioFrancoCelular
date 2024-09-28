@@ -1,0 +1,102 @@
+/* Estilos generales */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Estilos del header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 5px 10px; /* Espaciado reducido para móviles */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Contenido */
+.content-box {
+    padding: 20px;
+    margin: 20px;
+    flex: 1;
+}
+
+/* Estilos del home */
+.home-content {
+    display: flex;
+    flex-direction: column; /* Cambiado a columna para móviles */
+    align-items: center;
+}
+
+.text-box {
+    background-color: #e6f7ff;
+    border: 1px solid #a0c4ff;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+/* Imagen del perfil */
+.profile-pic {
+    width: 100px; /* Ajustado para pantallas pequeñas */
+    border-radius: 50%;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    width: 100%;
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .home-content {
+        flex-direction: column; /* Cambiar a columna en móviles */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0 5px; /* Espaciado ajustado para móviles */
+    }
+
+    .profile-pic {
+        width: 100px; /* Ajustado para pantallas pequeñas */
+    }
+
+    .content-box {
+        margin: 10px; /* Reducir márgenes en móviles */
+        padding: 15px; /* Reducir padding en móviles */
+    }
+
+    header h1, .content-box h2, .content-box h3 {
+        font-size: 1.5em; /* Ajustar tamaño de fuente */
+    }
+}
